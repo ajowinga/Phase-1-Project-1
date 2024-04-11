@@ -1,0 +1,26 @@
+/* 
+.navigationBar{
+  
+  position: absolute;
+  width: 247px;
+  height: 752px;
+  left: 0px;
+  top: 40px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background: linear-gradient(0deg, rgba(193, 37, 37, 0.2), rgba(193, 37, 37, 0.2)), #FAF0F0;
+  box-shadow: -15px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  } */
+
+  .navigationBar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-items{
+    text-decoration: none;
+  }
