@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const baseUrl = "http://localhost:3000/university";
-    // let universities=[]
-  
   
     const form = document.getElementById("form");
   
@@ -21,8 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const filter = search.value.toLowerCase();
   
-      const filteredUniversities = university.filter(university => university.name.toLowerCase().includes(filter));
-      
+      const filteredUniversities = universities.filter(university => university.name.toLowerCase().includes(filter));
   
   
       renderUniversities(filteredUniversities, results);
@@ -82,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const ranking = document.createElement("p");
   
-      ranking.textContent = `Ranking: ${university.ranking}`;
+      ranking.textContent = `Ranking:${university.ranking}`;
   
       results.appendChild(ranking);
   
